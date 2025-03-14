@@ -1,12 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import nest_asyncio
-from pyngrok import ngrok
-import uvicorn
-import getpass
+from fastapi.responses import StreamingResponse
+from fastapi import FastAPI, HTTPException
 from models.start_vllm import model
 from models.test_model import QuestionRequest, ask_model, stream_llm_response
-from pyngrok import ngrok, conf
 
 app = FastAPI()
 

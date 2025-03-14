@@ -1,8 +1,6 @@
 import requests
 import json
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from fastapi.responses import StreamingResponse
 import requests
 from models.start_vllm import model
 
